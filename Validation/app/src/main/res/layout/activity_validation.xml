@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".validationActivity">
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="225dp"
+        android:orientation="vertical"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:src="@drawable/yger">
+
+
+
+        </ImageView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="영진전문대 강의실 지킴이"
+            android:textSize="20dp"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            ></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="이메일 인증"
+            android:textSize="15dp"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"></TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="E-mail 인증번호 입력하기"
+            android:layout_marginTop="20dp"
+            android:textSize="20dp"
+            android:textColor="@color/colorPrimary"></TextView>
+        <EditText
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:hint="인증번호"
+            android:layout_gravity="center"
+            android:padding="15dp"
+            android:textColor="#ffffff"
+            android:textColorHint="#ffffff"
+            android:id="@+id/userEmail"
+            android:layout_marginTop="30dp"
+            android:drawableStart="@drawable/ic_lock_black_24dp"
+            android:drawableRight="@drawable/ic_lock_black_24dp"
+            android:background="@color/colorPrimary"
+            android:drawablePadding="10dp"
+            android:singleLine="true"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="E-mail로 발송된 인증번호를 적어주세요"
+            android:layout_gravity="center"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginTop="10dp"
+            android:textSize="15dp">
+
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="3:00"
+            android:textSize="30dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/emailTime"/>
+        <Button
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:padding="10dp"
+            android:background="@color/colorPrimaryDark"
+            android:text="인증번호 입력"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:id="@+id/sendValidation">
+
+        </Button>
+
+
+
+
+
+    </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

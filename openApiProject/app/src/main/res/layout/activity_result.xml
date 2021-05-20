@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ResultActivity">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="20dp"
+        android:id="@+id/buttonConstraint">
+        <Button
+            android:id="@+id/recommendButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/locationButton"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            android:text="이달의 추천여행지"
+            >
+
+
+        </Button>
+        <Button
+            android:id="@+id/locationButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toRightOf="@id/recommendButton"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:text="현재위치 기반 여행지"
+            ></Button>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <fragment
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        app:layout_constraintTop_toTopOf="@id/buttonConstraint"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="150dp"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"></fragment>
+    <Button
+        android:id="@+id/buttonRefreshing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ReFresh"
+        app:layout_constraintTop_toBottomOf="@id/map"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="30dp"></Button>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

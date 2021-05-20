@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Widget</string>
+    <string name="textViewTitle">회원가입</string>
+    <string name="editTextName">이름</string>
+    <string name="editTextPhone">전화번호</string>
+    <string name="radioButtonAdult">성인반</string>
+    <string name="radioButtonStudent">학생반</string>
+    <string name="terms">약관동의</string>
+    <string name="checkboxTerms">이용약관 (필수)</string>
+    <string name="checkboxMarketing">마켓팅 활용 동의(선택)</string>
+    <string name="buttonApply">신청</string>
+</resources>

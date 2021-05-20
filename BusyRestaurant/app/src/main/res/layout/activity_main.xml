@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/noto_sans"
+        android:text="@string/app_name"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewTitleOrder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:text="주문 간격"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <EditText
+        android:id="@+id/editTextOrder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:ems="3"
+        android:inputType="numberDecimal"
+        android:text="1"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewTitleOrder"
+        app:layout_constraintStart_toEndOf="@+id/textViewTitleOrder"
+        app:layout_constraintTop_toTopOf="@+id/textViewTitleOrder" />
+
+    <TextView
+        android:id="@+id/textViewTitleCook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:text="조리 시간"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTitleOrder" />
+
+    <EditText
+        android:id="@+id/editTextCook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="1"
+        android:ems="3"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewTitleCook"
+        app:layout_constraintStart_toEndOf="@+id/textViewTitleCook"
+        app:layout_constraintTop_toTopOf="@+id/textViewTitleCook" />
+
+    <TextView
+        android:id="@+id/textViewTitlePack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:text="포장 시간"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTitleCook" />
+
+    <EditText
+        android:id="@+id/editTextPack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="1"
+        android:ems="3"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewTitlePack"
+        app:layout_constraintStart_toEndOf="@+id/textViewTitlePack"
+        app:layout_constraintTop_toTopOf="@+id/textViewTitlePack" />
+
+    <Button
+        android:id="@+id/buttonStart"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Start"
+        style="@style/BigText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPack" />
+
+    <TextView
+        android:id="@+id/textViewOrders"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="주문표"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonStart" />
+
+    <TextView
+        android:id="@+id/textViewFoods"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="완성음식"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonStart" />
+
+    <TextView
+        android:id="@+id/textViewPacks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="포장 완료"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textViewFoods" />
+
+    <TextView
+        android:id="@+id/textViewOrderList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text=""
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewOrders" />
+
+    <TextView
+        android:id="@+id/textViewFoodList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="@+id/textViewFoods"
+        app:layout_constraintStart_toStartOf="@+id/textViewFoods"
+        app:layout_constraintTop_toBottomOf="@+id/textViewFoods" />
+
+    <TextView
+        android:id="@+id/textViewPackList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text=""
+        app:layout_constraintTop_toBottomOf="@+id/textViewPacks"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewCooking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="요리중"
+        app:layout_constraintEnd_toStartOf="@+id/textViewFoods"
+        app:layout_constraintStart_toEndOf="@+id/textViewOrders"
+        app:layout_constraintTop_toTopOf="@+id/textViewFoods" />
+
+    <TextView
+        android:id="@+id/textViewPacking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="포장중"
+        app:layout_constraintEnd_toStartOf="@+id/textViewPacks"
+        app:layout_constraintStart_toEndOf="@+id/textViewFoods"
+        app:layout_constraintTop_toTopOf="@+id/textViewFoods" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="76dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.515"
+        app:layout_constraintStart_toEndOf="@+id/editTextCook"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:srcCompat="@drawable/baseline_receipt_black_18dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
